@@ -1,0 +1,17 @@
+//##############################################################################
+// Alerts
+//##############################################################################
+
+// Loading screen
+
+"ResponseErrorModel.ResponseErrorKey.unexpectedError.title" = "Oops!";
+"ResponseErrorModel.ResponseErrorKey.unexpectedError.text" = "Something went wrong:( Please, try again";
+"ResponseErrorModel.ResponseErrorKey.unexpectedError.action" = "Try again";
+
+"ResponseErrorModel.ResponseErrorKey.noNetworkConnection.title" = "Any internet?";
+"ResponseErrorModel.ResponseErrorKey.noNetworkConnection.text" = "Seems like your internet gone for a walk. Please, bring it back and try again";
+"ResponseErrorModel.ResponseErrorKey.noNetworkConnection.action" = "Try again";
+
+"ResponseErrorModel.ResponseErrorKey.parsingError.title" = "Ooopsie!";
+"ResponseErrorModel.ResponseErrorKey.parsingError.text" = "Something happened on our side. Our robots are trying to fix it.";
+"ResponseErrorModel.ResponseErrorKey.parsingError.action" = "Help them!";

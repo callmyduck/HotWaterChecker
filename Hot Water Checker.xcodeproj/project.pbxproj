@@ -3,29 +3,88 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4DAA6E1D0362FE21C31653 /* Pods_Hot_Water_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E07A579C9BB113F46F1F07 /* Pods_Hot_Water_Checker.framework */; };
+		FA05CE83255292F3007C694B /* HotWaterMaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CE82255292F3007C694B /* HotWaterMaintenanceViewController.swift */; };
+		FA05CE8A255294BC007C694B /* HotWaterMaintenanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CE89255294BC007C694B /* HotWaterMaintenanceViewModel.swift */; };
+		FA05CE8D25529510007C694B /* HotWaterMaintenanceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CE8C25529510007C694B /* HotWaterMaintenanceFactory.swift */; };
+		FA05CE9625529E11007C694B /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CE9525529E11007C694B /* RequestModel.swift */; };
+		FA05CE9A25529E6B007C694B /* ResponseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CE9925529E6B007C694B /* ResponseErrorModel.swift */; };
+		FA05CE9F25529F6E007C694B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CE9E25529F6E007C694B /* String+Extensions.swift */; };
+		FA05CEA225529FA5007C694B /* ResponseErrorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CEA125529FA5007C694B /* ResponseErrorKey.swift */; };
+		FA05CEA72552A2C8007C694B /* APIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CEA62552A2C8007C694B /* APIServiceManager.swift */; };
+		FA05CEAD2552A425007C694B /* HotWaterMaintenanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CEAC2552A425007C694B /* HotWaterMaintenanceRequest.swift */; };
+		FA05CEB32552A9BA007C694B /* HotWaterMaintenanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CEB22552A9BA007C694B /* HotWaterMaintenanceResponse.swift */; };
+		FA05CEB72552AEB8007C694B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CEB62552AEB8007C694B /* APIService.swift */; };
+		FA05CEC02552BC18007C694B /* LocalFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CEBF2552BC18007C694B /* LocalFilesManager.swift */; };
+		FA05CEC82552EC37007C694B /* HotWaterMaintenanceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CEC72552EC37007C694B /* HotWaterMaintenanceDetails.swift */; };
+		FA05CECB2552F028007C694B /* APIServicePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CECA2552F028007C694B /* APIServicePaths.swift */; };
+		FA05CED62552F9A0007C694B /* HotWaterMaintenanceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CED52552F99F007C694B /* HotWaterMaintenanceTableView.swift */; };
+		FA05CEDA2552FB0C007C694B /* HotWaterMaintenanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CED92552FB0C007C694B /* HotWaterMaintenanceCell.swift */; };
+		FA05CF122553CBF0007C694B /* StartSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CF112553CBF0007C694B /* StartSceneFactory.swift */; };
+		FA05CF172553D324007C694B /* StartSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CF162553D324007C694B /* StartSceneViewModel.swift */; };
+		FA05CF1B2553D390007C694B /* StartSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CF1A2553D390007C694B /* StartSceneRouter.swift */; };
+		FA05CF1E2553D412007C694B /* StartSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05CF1D2553D412007C694B /* StartSceneViewController.swift */; };
+		FA3B0B68255406BE00822A32 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0B67255406BE00822A32 /* AlertService.swift */; };
+		FA4A23A525548DCC00DC37D7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A23A425548DCC00DC37D7 /* Reachability.swift */; };
+		FA6B8F452554628B0034F46A /* LocalFilesManager+Errors&Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B8F442554628B0034F46A /* LocalFilesManager+Errors&Results.swift */; };
+		FA6B8F54255474720034F46A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6B8F52255474720034F46A /* Localizable.strings */; };
 		FAA6EAE525528D4600C6A53F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EAE425528D4600C6A53F /* AppDelegate.swift */; };
-		FAA6EAE725528D4600C6A53F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EAE625528D4600C6A53F /* SceneDelegate.swift */; };
-		FAA6EAE925528D4600C6A53F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EAE825528D4600C6A53F /* ViewController.swift */; };
-		FAA6EAEC25528D4600C6A53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6EAEA25528D4600C6A53F /* Main.storyboard */; };
 		FAA6EAEF25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EAED25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld */; };
 		FAA6EAF125528D4800C6A53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA6EAF025528D4800C6A53F /* Assets.xcassets */; };
 		FAA6EAF425528D4800C6A53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6EAF225528D4800C6A53F /* LaunchScreen.storyboard */; };
+		FAE653602554A8BA00A3752A /* PreviouslyUnzipped.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6535F2554A8BA00A3752A /* PreviouslyUnzipped.swift */; };
+		FAE653652554AA8200A3752A /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE653642554AA8200A3752A /* R.swift */; };
+		FAE653682554AAA100A3752A /* R+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE653672554AAA100A3752A /* R+Color.swift */; };
+		FAE6536F2554AC4F00A3752A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6536E2554AC4F00A3752A /* UIColor+Extensions.swift */; };
+		FAE653722554AD9C00A3752A /* R+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE653712554AD9C00A3752A /* R+Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67E07A579C9BB113F46F1F07 /* Pods_Hot_Water_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hot_Water_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		734276CA4072BC74C2850CEB /* Pods-Hot Water Checker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hot Water Checker.release.xcconfig"; path = "Target Support Files/Pods-Hot Water Checker/Pods-Hot Water Checker.release.xcconfig"; sourceTree = "<group>"; };
+		F69511F9FF108A0B07B1711F /* Pods-Hot Water Checker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hot Water Checker.debug.xcconfig"; path = "Target Support Files/Pods-Hot Water Checker/Pods-Hot Water Checker.debug.xcconfig"; sourceTree = "<group>"; };
+		FA05CE82255292F3007C694B /* HotWaterMaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceViewController.swift; sourceTree = "<group>"; };
+		FA05CE89255294BC007C694B /* HotWaterMaintenanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceViewModel.swift; sourceTree = "<group>"; };
+		FA05CE8C25529510007C694B /* HotWaterMaintenanceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceFactory.swift; sourceTree = "<group>"; };
+		FA05CE9525529E11007C694B /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		FA05CE9925529E6B007C694B /* ResponseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorModel.swift; sourceTree = "<group>"; };
+		FA05CE9E25529F6E007C694B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		FA05CEA125529FA5007C694B /* ResponseErrorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorKey.swift; sourceTree = "<group>"; };
+		FA05CEA62552A2C8007C694B /* APIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceManager.swift; sourceTree = "<group>"; };
+		FA05CEAC2552A425007C694B /* HotWaterMaintenanceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceRequest.swift; sourceTree = "<group>"; };
+		FA05CEB22552A9BA007C694B /* HotWaterMaintenanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceResponse.swift; sourceTree = "<group>"; };
+		FA05CEB62552AEB8007C694B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FA05CEBF2552BC18007C694B /* LocalFilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilesManager.swift; sourceTree = "<group>"; };
+		FA05CEC72552EC37007C694B /* HotWaterMaintenanceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceDetails.swift; sourceTree = "<group>"; };
+		FA05CECA2552F028007C694B /* APIServicePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServicePaths.swift; sourceTree = "<group>"; };
+		FA05CED52552F99F007C694B /* HotWaterMaintenanceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceTableView.swift; sourceTree = "<group>"; };
+		FA05CED92552FB0C007C694B /* HotWaterMaintenanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWaterMaintenanceCell.swift; sourceTree = "<group>"; };
+		FA05CF112553CBF0007C694B /* StartSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneFactory.swift; sourceTree = "<group>"; };
+		FA05CF162553D324007C694B /* StartSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneViewModel.swift; sourceTree = "<group>"; };
+		FA05CF1A2553D390007C694B /* StartSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneRouter.swift; sourceTree = "<group>"; };
+		FA05CF1D2553D412007C694B /* StartSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneViewController.swift; sourceTree = "<group>"; };
+		FA3B0B67255406BE00822A32 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		FA4A23A425548DCC00DC37D7 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FA6B8F442554628B0034F46A /* LocalFilesManager+Errors&Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalFilesManager+Errors&Results.swift"; sourceTree = "<group>"; };
+		FA6B8F4F2554734D0034F46A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FA6B8F53255474720034F46A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = "Hot Water Checker/Base.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		FA6B8F562554747B0034F46A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA6B8F572554747C0034F46A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ../../ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FAA6EAE125528D4600C6A53F /* Hot Water Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hot Water Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6EAE425528D4600C6A53F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA6EAE625528D4600C6A53F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAA6EAE825528D4600C6A53F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAA6EAEB25528D4600C6A53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAA6EAEE25528D4600C6A53F /* Hot_Water_Checker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hot_Water_Checker.xcdatamodel; sourceTree = "<group>"; };
 		FAA6EAF025528D4800C6A53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA6EAF325528D4800C6A53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA6EAF525528D4800C6A53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE6535F2554A8BA00A3752A /* PreviouslyUnzipped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviouslyUnzipped.swift; sourceTree = "<group>"; };
+		FAE653642554AA8200A3752A /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		FAE653672554AAA100A3752A /* R+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+Color.swift"; sourceTree = "<group>"; };
+		FAE6536E2554AC4F00A3752A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		FAE653712554AD9C00A3752A /* R+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+Font.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +92,244 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4DAA6E1D0362FE21C31653 /* Pods_Hot_Water_Checker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9880CEBE0D387B5604C253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67E07A579C9BB113F46F1F07 /* Pods_Hot_Water_Checker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B617CBA51C6F367AA6C1411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F69511F9FF108A0B07B1711F /* Pods-Hot Water Checker.debug.xcconfig */,
+				734276CA4072BC74C2850CEB /* Pods-Hot Water Checker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA05CE7B255291CC007C694B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6EAFC25528D5700C6A53F /* Application&Delegates */,
+				FA4A23A225548D8100DC37D7 /* Base */,
+				FA05CE7D25529203007C694B /* Scenes */,
+				FA05CE8F255297DB007C694B /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FA05CE7D25529203007C694B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CF1025534104007C694B /* StartScene */,
+				FA05CE7E2552923C007C694B /* HotWaterMaintenanceScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FA05CE7E2552923C007C694B /* HotWaterMaintenanceScene */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CE8125529273007C694B /* Data */,
+				FA05CE8025529263007C694B /* View */,
+				FA05CE8C25529510007C694B /* HotWaterMaintenanceFactory.swift */,
+			);
+			path = HotWaterMaintenanceScene;
+			sourceTree = "<group>";
+		};
+		FA05CE8025529263007C694B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FACC888B2554A443008004DD /* TableView */,
+				FA05CE82255292F3007C694B /* HotWaterMaintenanceViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA05CE8125529273007C694B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CE89255294BC007C694B /* HotWaterMaintenanceViewModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA05CE8F255297DB007C694B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA3B0B662554058F00822A32 /* AlertService */,
+				FA05CEB92552BA6F007C694B /* LocalFilesService */,
+				FA05CE90255297EE007C694B /* APIService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA05CE90255297EE007C694B /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CEA52552A26E007C694B /* APIServiceManager */,
+				FA05CEA42552A24C007C694B /* Requests&Responses */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		FA05CE9125529D93007C694B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CE9525529E11007C694B /* RequestModel.swift */,
+				FA05CE9925529E6B007C694B /* ResponseErrorModel.swift */,
+				FA05CEA125529FA5007C694B /* ResponseErrorKey.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FA05CE9C25529F51007C694B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CE7B255291CC007C694B /* Core */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FA05CE9D25529F5B007C694B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CE9E25529F6E007C694B /* String+Extensions.swift */,
+				FAE6536E2554AC4F00A3752A /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA05CEA42552A24C007C694B /* Requests&Responses */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CE9125529D93007C694B /* Base */,
+				FA05CEAB2552A409007C694B /* HotWaterMaintenanceInfo */,
+			);
+			path = "Requests&Responses";
+			sourceTree = "<group>";
+		};
+		FA05CEA52552A26E007C694B /* APIServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CEB62552AEB8007C694B /* APIService.swift */,
+				FA05CEA62552A2C8007C694B /* APIServiceManager.swift */,
+				FA05CECA2552F028007C694B /* APIServicePaths.swift */,
+			);
+			path = APIServiceManager;
+			sourceTree = "<group>";
+		};
+		FA05CEAB2552A409007C694B /* HotWaterMaintenanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CEAC2552A425007C694B /* HotWaterMaintenanceRequest.swift */,
+				FA05CEB22552A9BA007C694B /* HotWaterMaintenanceResponse.swift */,
+			);
+			path = HotWaterMaintenanceInfo;
+			sourceTree = "<group>";
+		};
+		FA05CEB92552BA6F007C694B /* LocalFilesService */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CEC32552EBB0007C694B /* LocalFilesDecoding */,
+				FA05CEC62552EC0E007C694B /* LocalFilesManager */,
+			);
+			path = LocalFilesService;
+			sourceTree = "<group>";
+		};
+		FA05CEC32552EBB0007C694B /* LocalFilesDecoding */ = {
+			isa = PBXGroup;
+			children = (
+				FAE6535E2554A89700A3752A /* Protocols */,
+				FA05CEC72552EC37007C694B /* HotWaterMaintenanceDetails.swift */,
+			);
+			path = LocalFilesDecoding;
+			sourceTree = "<group>";
+		};
+		FA05CEC62552EC0E007C694B /* LocalFilesManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CEBF2552BC18007C694B /* LocalFilesManager.swift */,
+				FA6B8F442554628B0034F46A /* LocalFilesManager+Errors&Results.swift */,
+			);
+			path = LocalFilesManager;
+			sourceTree = "<group>";
+		};
+		FA05CF1025534104007C694B /* StartScene */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CF142553D2B0007C694B /* Data */,
+				FA05CF152553D2BC007C694B /* View */,
+				FA05CF112553CBF0007C694B /* StartSceneFactory.swift */,
+				FA05CF1A2553D390007C694B /* StartSceneRouter.swift */,
+			);
+			path = StartScene;
+			sourceTree = "<group>";
+		};
+		FA05CF142553D2B0007C694B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CF162553D324007C694B /* StartSceneViewModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA05CF152553D2BC007C694B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CF1D2553D412007C694B /* StartSceneViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA3B0B662554058F00822A32 /* AlertService */ = {
+			isa = PBXGroup;
+			children = (
+				FA3B0B67255406BE00822A32 /* AlertService.swift */,
+			);
+			path = AlertService;
+			sourceTree = "<group>";
+		};
+		FA4A23A225548D8100DC37D7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A23A325548D9000DC37D7 /* Reachability */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FA4A23A325548D9000DC37D7 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A23A425548DCC00DC37D7 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		FA6B8F512554737A0034F46A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B8F52255474720034F46A /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		FAA6EAD825528D4600C6A53F = {
 			isa = PBXGroup;
 			children = (
 				FAA6EAE325528D4600C6A53F /* Hot Water Checker */,
 				FAA6EAE225528D4600C6A53F /* Products */,
+				8B617CBA51C6F367AA6C1411 /* Pods */,
+				1C9880CEBE0D387B5604C253 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +344,67 @@
 		FAA6EAE325528D4600C6A53F /* Hot Water Checker */ = {
 			isa = PBXGroup;
 			children = (
-				FAA6EAE425528D4600C6A53F /* AppDelegate.swift */,
-				FAA6EAE625528D4600C6A53F /* SceneDelegate.swift */,
-				FAA6EAE825528D4600C6A53F /* ViewController.swift */,
-				FAA6EAEA25528D4600C6A53F /* Main.storyboard */,
-				FAA6EAF025528D4800C6A53F /* Assets.xcassets */,
-				FAA6EAF225528D4800C6A53F /* LaunchScreen.storyboard */,
-				FAA6EAF525528D4800C6A53F /* Info.plist */,
-				FAA6EAED25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld */,
+				FA05CE9D25529F5B007C694B /* Extensions */,
+				FA05CE9C25529F51007C694B /* Source */,
+				FAA6EAFF25528D6E00C6A53F /* Resources */,
+				FAA6EAFE25528D6500C6A53F /* Supporting Files */,
 			);
 			path = "Hot Water Checker";
+			sourceTree = "<group>";
+		};
+		FAA6EAFC25528D5700C6A53F /* Application&Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6EAE425528D4600C6A53F /* AppDelegate.swift */,
+			);
+			path = "Application&Delegates";
+			sourceTree = "<group>";
+		};
+		FAA6EAFE25528D6500C6A53F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6EAF225528D4800C6A53F /* LaunchScreen.storyboard */,
+				FAA6EAF525528D4800C6A53F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAA6EAFF25528D6E00C6A53F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6EAED25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld */,
+				FAE653632554AA6B00A3752A /* R */,
+				FA6B8F512554737A0034F46A /* Localization */,
+				FAA6EAF025528D4800C6A53F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FACC888B2554A443008004DD /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FA05CED52552F99F007C694B /* HotWaterMaintenanceTableView.swift */,
+				FA05CED92552FB0C007C694B /* HotWaterMaintenanceCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FAE6535E2554A89700A3752A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAE6535F2554A8BA00A3752A /* PreviouslyUnzipped.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAE653632554AA6B00A3752A /* R */ = {
+			isa = PBXGroup;
+			children = (
+				FAE653642554AA8200A3752A /* R.swift */,
+				FAE653672554AAA100A3752A /* R+Color.swift */,
+				FAE653712554AD9C00A3752A /* R+Font.swift */,
+			);
+			path = R;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +414,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA6EAF825528D4800C6A53F /* Build configuration list for PBXNativeTarget "Hot Water Checker" */;
 			buildPhases = (
+				7D20EA992D3D8754DF5B93AB /* [CP] Check Pods Manifest.lock */,
 				FAA6EADD25528D4600C6A53F /* Sources */,
 				FAA6EADE25528D4600C6A53F /* Frameworks */,
 				FAA6EADF25528D4600C6A53F /* Resources */,
+				2383DFF2D420286D6286289D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,6 +450,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = FAA6EAD825528D4600C6A53F;
 			productRefGroup = FAA6EAE225528D4600C6A53F /* Products */;
@@ -128,40 +468,111 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA6EAF425528D4800C6A53F /* LaunchScreen.storyboard in Resources */,
+				FA6B8F54255474720034F46A /* Localizable.strings in Resources */,
 				FAA6EAF125528D4800C6A53F /* Assets.xcassets in Resources */,
-				FAA6EAEC25528D4600C6A53F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2383DFF2D420286D6286289D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hot Water Checker/Pods-Hot Water Checker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hot Water Checker/Pods-Hot Water Checker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hot Water Checker/Pods-Hot Water Checker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D20EA992D3D8754DF5B93AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hot Water Checker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAA6EADD25528D4600C6A53F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA6EAE925528D4600C6A53F /* ViewController.swift in Sources */,
+				FA05CE9F25529F6E007C694B /* String+Extensions.swift in Sources */,
+				FAE653722554AD9C00A3752A /* R+Font.swift in Sources */,
+				FA05CEB72552AEB8007C694B /* APIService.swift in Sources */,
 				FAA6EAE525528D4600C6A53F /* AppDelegate.swift in Sources */,
-				FAA6EAE725528D4600C6A53F /* SceneDelegate.swift in Sources */,
+				FAE653652554AA8200A3752A /* R.swift in Sources */,
+				FA4A23A525548DCC00DC37D7 /* Reachability.swift in Sources */,
+				FA05CE8A255294BC007C694B /* HotWaterMaintenanceViewModel.swift in Sources */,
+				FAE6536F2554AC4F00A3752A /* UIColor+Extensions.swift in Sources */,
+				FA05CEA225529FA5007C694B /* ResponseErrorKey.swift in Sources */,
+				FA05CEDA2552FB0C007C694B /* HotWaterMaintenanceCell.swift in Sources */,
+				FA05CEA72552A2C8007C694B /* APIServiceManager.swift in Sources */,
+				FA05CE8D25529510007C694B /* HotWaterMaintenanceFactory.swift in Sources */,
+				FA05CF122553CBF0007C694B /* StartSceneFactory.swift in Sources */,
+				FA05CF1B2553D390007C694B /* StartSceneRouter.swift in Sources */,
+				FA05CECB2552F028007C694B /* APIServicePaths.swift in Sources */,
+				FA05CEC82552EC37007C694B /* HotWaterMaintenanceDetails.swift in Sources */,
+				FA6B8F452554628B0034F46A /* LocalFilesManager+Errors&Results.swift in Sources */,
+				FA05CEAD2552A425007C694B /* HotWaterMaintenanceRequest.swift in Sources */,
+				FAE653682554AAA100A3752A /* R+Color.swift in Sources */,
+				FA05CE83255292F3007C694B /* HotWaterMaintenanceViewController.swift in Sources */,
+				FA05CE9A25529E6B007C694B /* ResponseErrorModel.swift in Sources */,
+				FA05CEC02552BC18007C694B /* LocalFilesManager.swift in Sources */,
 				FAA6EAEF25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld in Sources */,
+				FA3B0B68255406BE00822A32 /* AlertService.swift in Sources */,
+				FA05CED62552F9A0007C694B /* HotWaterMaintenanceTableView.swift in Sources */,
+				FA05CF1E2553D412007C694B /* StartSceneViewController.swift in Sources */,
+				FAE653602554A8BA00A3752A /* PreviouslyUnzipped.swift in Sources */,
+				FA05CE9625529E11007C694B /* RequestModel.swift in Sources */,
+				FA05CEB32552A9BA007C694B /* HotWaterMaintenanceResponse.swift in Sources */,
+				FA05CF172553D324007C694B /* StartSceneViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FAA6EAEA25528D4600C6A53F /* Main.storyboard */ = {
+		FA6B8F52255474720034F46A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FAA6EAEB25528D4600C6A53F /* Base */,
+				FA6B8F53255474720034F46A /* Base */,
+				FA6B8F562554747B0034F46A /* en */,
+				FA6B8F572554747C0034F46A /* ru */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		FAA6EAF225528D4800C6A53F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FAA6EAF325528D4800C6A53F /* Base */,
+				FA6B8F4F2554734D0034F46A /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -173,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -220,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -234,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -275,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,12 +700,14 @@
 		};
 		FAA6EAF925528D4800C6A53F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69511F9FF108A0B07B1711F /* Pods-Hot Water Checker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4DTBZH68D;
-				INFOPLIST_FILE = "Hot Water Checker/Info.plist";
+				INFOPLIST_FILE = "Hot Water Checker/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +721,14 @@
 		};
 		FAA6EAFA25528D4800C6A53F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734276CA4072BC74C2850CEB /* Pods-Hot Water Checker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4DTBZH68D;
-				INFOPLIST_FILE = "Hot Water Checker/Info.plist";
+				INFOPLIST_FILE = "Hot Water Checker/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

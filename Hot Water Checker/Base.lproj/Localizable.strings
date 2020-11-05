@@ -1,0 +1,17 @@
+//##############################################################################
+// Алерты
+//##############################################################################
+
+// Загрузочный экран
+
+"ResponseErrorModel.ResponseErrorKey.unexpectedError.title" = "Ошибочка вышла:(";
+"ResponseErrorModel.ResponseErrorKey.unexpectedError.text" = "Что-то пошло не так. Попробуем еще раз?";
+"ResponseErrorModel.ResponseErrorKey.unexpectedError.action" = "Попробуем";
+
+"ResponseErrorModel.ResponseErrorKey.noNetworkConnection.title" = "Где интернет?";
+"ResponseErrorModel.ResponseErrorKey.noNetworkConnection.text" = "Кажется, что-то с интернетом. Пожалуйста, проверьте соединение";
+"ResponseErrorModel.ResponseErrorKey.noNetworkConnection.action" = "Попробовать еще";
+
+"ResponseErrorModel.ResponseErrorKey.parsingError.title" = "Упс!";
+"ResponseErrorModel.ResponseErrorKey.parsingError.text" = "У нас что-то сломалось, давайте еще попробуем?";
+"ResponseErrorModel.ResponseErrorKey.parsingError.action" = "Давайте";
