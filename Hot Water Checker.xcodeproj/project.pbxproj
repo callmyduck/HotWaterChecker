@@ -33,7 +33,6 @@
 		FA6B8F452554628B0034F46A /* LocalFilesManager+Errors&Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B8F442554628B0034F46A /* LocalFilesManager+Errors&Results.swift */; };
 		FA6B8F54255474720034F46A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6B8F52255474720034F46A /* Localizable.strings */; };
 		FAA6EAE525528D4600C6A53F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EAE425528D4600C6A53F /* AppDelegate.swift */; };
-		FAA6EAEF25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA6EAED25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld */; };
 		FAA6EAF125528D4800C6A53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA6EAF025528D4800C6A53F /* Assets.xcassets */; };
 		FAA6EAF425528D4800C6A53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6EAF225528D4800C6A53F /* LaunchScreen.storyboard */; };
 		FAE653602554A8BA00A3752A /* PreviouslyUnzipped.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6535F2554A8BA00A3752A /* PreviouslyUnzipped.swift */; };
@@ -76,7 +75,6 @@
 		FA6B8F572554747C0034F46A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ../../ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FAA6EAE125528D4600C6A53F /* Hot Water Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hot Water Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6EAE425528D4600C6A53F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA6EAEE25528D4600C6A53F /* Hot_Water_Checker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hot_Water_Checker.xcdatamodel; sourceTree = "<group>"; };
 		FAA6EAF025528D4800C6A53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA6EAF325528D4800C6A53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA6EAF525528D4800C6A53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -372,7 +370,6 @@
 		FAA6EAFF25528D6E00C6A53F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FAA6EAED25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld */,
 				FAE653632554AA6B00A3752A /* R */,
 				FA6B8F512554737A0034F46A /* Localization */,
 				FAA6EAF025528D4800C6A53F /* Assets.xcassets */,
@@ -544,7 +541,6 @@
 				FA05CE83255292F3007C694B /* HotWaterMaintenanceViewController.swift in Sources */,
 				FA05CE9A25529E6B007C694B /* ResponseErrorModel.swift in Sources */,
 				FA05CEC02552BC18007C694B /* LocalFilesManager.swift in Sources */,
-				FAA6EAEF25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld in Sources */,
 				FA3B0B68255406BE00822A32 /* AlertService.swift in Sources */,
 				FA05CED62552F9A0007C694B /* HotWaterMaintenanceTableView.swift in Sources */,
 				FA05CF1E2553D412007C694B /* StartSceneViewController.swift in Sources */,
@@ -762,19 +758,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FAA6EAED25528D4600C6A53F /* Hot_Water_Checker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FAA6EAEE25528D4600C6A53F /* Hot_Water_Checker.xcdatamodel */,
-			);
-			currentVersion = FAA6EAEE25528D4600C6A53F /* Hot_Water_Checker.xcdatamodel */;
-			path = Hot_Water_Checker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FAA6EAD925528D4600C6A53F /* Project object */;
 }
