@@ -108,9 +108,11 @@ final class HotWaterMaintenanceCell: UITableViewCell {
     //MARK: - Methods
     
     func configureCell(withData maintenanceDetails: HotWaterMaintenanceDetail) {
-        cityLabel.text = maintenanceDetails.city
-        streetLabel.text = maintenanceDetails.street
-        houseNumberCombinedLabel.text = maintenanceDetails.getCombinedAddress()
-        maintenanceDatesLabel.text = maintenanceDetails.getMaintenanceDates()
+        var maintenanceInfo = maintenanceDetails
+        
+        cityLabel.text = maintenanceInfo.city
+        streetLabel.text = maintenanceInfo.street
+        houseNumberCombinedLabel.text = maintenanceInfo.getCombinedAddress()
+        maintenanceDatesLabel.text = maintenanceInfo.getMaintenanceDates()
     }
 }

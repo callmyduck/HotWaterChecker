@@ -6,9 +6,9 @@ final class LocalFilesManager {
     
     // MARK: - Properties
     public static let shared: LocalFilesManager = LocalFilesManager()
-    private let localFileManager: FileManager
+    private let localFilesManager: FileManager
     private var localFilesDirectory: URL {
-        let directoryURLsArray = self.localFileManager.urls(for: .documentDirectory,
+        let directoryURLsArray = self.localFilesManager.urls(for: .documentDirectory,
                                                             in: .userDomainMask)
         let filesDirectory = directoryURLsArray.first ?? URL(fileURLWithPath: NSTemporaryDirectory())
         return filesDirectory
@@ -16,7 +16,7 @@ final class LocalFilesManager {
     
     // MARK: - Initialization
     init() {
-        self.localFileManager = FileManager.default
+        self.localFilesManager = FileManager.default
     }
 }
 
@@ -140,7 +140,7 @@ extension LocalFilesManager {
     ///Checks if file exists at specific URL
     func isFileExists(withURL url: URL) -> Bool {
         let path = url.path
-        return self.localFileManager.fileExists(atPath: path)
+        return self.localFilesManager.fileExists(atPath: path)
     }
     
     /// Unzipping Archive
@@ -166,7 +166,7 @@ extension LocalFilesManager {
         let path = url.path
         
         if self.isFileExists(withURL: url) {
-            guard let existingArchiveData = self.localFileManager.contents(atPath: path),
+            guard let existingArchiveData = self.localFilesManager.contents(atPath: path),
                   let newArchiveData = decodeArchive(fromBase64EncodedString: newArchiveBase64Encoded) else {
                 return true
             }

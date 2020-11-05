@@ -22,16 +22,16 @@ struct HotWaterMaintenanceDetail: Codable, PreviouslyUnzipped {
     static var previouslyUnzippedFileName = "disconnect_teploset"
     
     //MARK: - Formatters
-    private var dateFromStringFormatter: DateFormatter = {
+    private lazy var dateFromStringFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
         return dateFormatter
     }()
     
-    private var dateFormatter: DateFormatter = {
+    private lazy var dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = .init(identifier: "ru")
-        dateFormatter.dateFormat = "d MMMM yyyy"
+        dateFormatter.locale = .init(identifier: "ru_RU")
+        dateFormatter.dateFormat = "dd MMMM yyyy"
         return dateFormatter
     }()
 }
@@ -58,7 +58,7 @@ extension HotWaterMaintenanceDetail {
     }
     
     ///Making maintenance dates look pretty if possible. If it's not, returning maintenance dates that came from server.
-    func getMaintenanceDates() -> String {
+    mutating func getMaintenanceDates() -> String {
         var finalMaintenanceDates: String = maintenanceDates
         
         let dateComponents = maintenanceDates.components(separatedBy: "-")
