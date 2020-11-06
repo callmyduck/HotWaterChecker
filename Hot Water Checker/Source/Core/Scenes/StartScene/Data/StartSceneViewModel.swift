@@ -31,6 +31,11 @@ final class StartSceneViewModel {
     func onViewAppeared() {
         loadMaintenanceData()
     }
+}
+
+
+
+extension StartSceneViewModel {
     
     //MARK: - Private Methods
     

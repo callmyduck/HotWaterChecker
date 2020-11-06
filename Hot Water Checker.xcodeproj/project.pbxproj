@@ -147,7 +147,7 @@
 		FA05CE8025529263007C694B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FACC888B2554A443008004DD /* TableView */,
+				FACC888B2554A443008004DD /* HotWaterMaintenanceTableView */,
 				FA05CE82255292F3007C694B /* HotWaterMaintenanceViewController.swift */,
 			);
 			path = View;
@@ -377,13 +377,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		FACC888B2554A443008004DD /* TableView */ = {
+		FACC888B2554A443008004DD /* HotWaterMaintenanceTableView */ = {
 			isa = PBXGroup;
 			children = (
 				FA05CED52552F99F007C694B /* HotWaterMaintenanceTableView.swift */,
 				FA05CED92552FB0C007C694B /* HotWaterMaintenanceCell.swift */,
 			);
-			path = TableView;
+			path = HotWaterMaintenanceTableView;
 			sourceTree = "<group>";
 		};
 		FAE6535E2554A89700A3752A /* Protocols */ = {
