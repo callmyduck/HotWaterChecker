@@ -1,14 +1,8 @@
-//
-//  HotWaterMaintenanceTableView.swift
-//  Hot Water Checker
-//
-//  Created by fomich on 04.11.2020.
-//
-
 import UIKit
 
 class HotWaterMaintenanceTableView: UITableView {
     
+    //MARK: - Initialization
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         
