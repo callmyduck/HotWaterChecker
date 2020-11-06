@@ -63,7 +63,7 @@ final class StartSceneViewModel {
                 }
             }
         case .disconnected:
-            throwAlert(forErrorKey: .noNetworkConnection)
+            readLocallySavedInfo()
         }
     }
     
@@ -72,26 +72,14 @@ final class StartSceneViewModel {
                                                      archiveName: String) {
         
         self.filesManager.saveArchiveIfNeeded(fromBase64EncodedString: maintenanceArchive,
-                                              withName: archiveName) { (result) in
+                                              withName: archiveName) { [weak self] (result) in
+            guard let self = self else { return }
+            
             switch result {
             //Successfully saved archive (or it already exists).
             //On this step archive is already decoded, saved and unzipped to JSON file.
             case .success:
-                let maintenanceDataURL: URL = self.filesManager.createPreviouslyUnzippedFileURL(ofType: HotWaterMaintenanceDetail.self)
-                
-                guard let archiveData = self.filesManager.readLocalFile(withURL: maintenanceDataURL,
-                                                                        ofType: HotWaterMaintenanceDetails.self) else {
-                    //Something went wrong when
-                    //trying to read unzipped archive from filesystem.
-                    DispatchQueue.main.async {
-                        self.throwAlert(forErrorKey: .unexpectedError)
-                    }
-                    return
-                }
-                
-                DispatchQueue.main.async {
-                    self.openHotWaterMaintenanceController(withData: archiveData)
-                }
+                self.readLocallySavedInfo()
                 
             //Something went wrong when saving an archive
             case .failure(_):
@@ -99,6 +87,25 @@ final class StartSceneViewModel {
                     self.throwAlert(forErrorKey: .unexpectedError)
                 }
             }
+        }
+    }
+    
+    ///Reading locally saved JSON.
+    ///Method used in both cases — when network is available and not.
+    private func readLocallySavedInfo() {
+        let maintenanceDataURL: URL = filesManager.createPreviouslyUnzippedFileURL(ofType: HotWaterMaintenanceDetail.self)
+        guard let archiveData = filesManager.readLocalFile(withURL: maintenanceDataURL,
+                                                                ofType: HotWaterMaintenanceDetails.self) else {
+            //Something went wrong when
+            //trying to read unzipped archive from filesystem.
+            DispatchQueue.main.async {
+                self.throwAlert(forErrorKey: .unexpectedError)
+            }
+            return
+        }
+        
+        DispatchQueue.main.async {
+            self.openHotWaterMaintenanceController(withData: archiveData)
         }
     }
     
