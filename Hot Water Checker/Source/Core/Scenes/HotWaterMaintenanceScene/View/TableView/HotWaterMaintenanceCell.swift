@@ -10,6 +10,7 @@ final class HotWaterMaintenanceCell: UITableViewCell {
     private var streetLabel: UILabel!
     private var houseNumberCombinedLabel: UILabel!
     private var maintenanceDatesLabel: UILabel!
+    private var separatingView: UIView!
     
     static let reuseIdentifier: String = "hotWaterMaintenanceCell"
     
@@ -44,29 +45,34 @@ final class HotWaterMaintenanceCell: UITableViewCell {
         cityLabel = .init()
         cityLabel.numberOfLines = 0
         cityLabel.font = R.Font.bold(16)
-        cityLabel.textColor = .black
+        cityLabel.textColor = R.Color.text
         cityLabel.textAlignment = .center
         containerView.addSubview(cityLabel)
         
         
         streetLabel = .init()
         streetLabel.numberOfLines = 0
-        streetLabel.font = R.Font.medium(14)
-        streetLabel.textColor = .black
+        streetLabel.font = R.Font.medium(16)
+        streetLabel.textColor = R.Color.text
         streetLabel.textAlignment = .center
         containerView.addSubview(streetLabel)
         
         houseNumberCombinedLabel = .init()
         houseNumberCombinedLabel.numberOfLines = 0
         houseNumberCombinedLabel.font = R.Font.regular(14)
-        houseNumberCombinedLabel.textColor = .black
+        houseNumberCombinedLabel.textColor = R.Color.text
         houseNumberCombinedLabel.textAlignment = .center
         containerView.addSubview(houseNumberCombinedLabel)
+        
+        separatingView = .init()
+        separatingView.backgroundColor = R.Color.placeholder
+        separatingView.layer.cornerRadius = 1
+        containerView.addSubview(separatingView)
         
         maintenanceDatesLabel = .init()
         maintenanceDatesLabel.numberOfLines = 0
         maintenanceDatesLabel.font = R.Font.bold(14)
-        maintenanceDatesLabel.textColor = .black
+        maintenanceDatesLabel.textColor = R.Color.text
         maintenanceDatesLabel.textAlignment = .center
         containerView.addSubview(maintenanceDatesLabel)
     }
@@ -85,7 +91,7 @@ final class HotWaterMaintenanceCell: UITableViewCell {
         }
         
         streetLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(cityLabel.snp.bottom).offset(8)
+            make.top.equalTo(cityLabel.snp.bottom).offset(4)
             make.centerX.equalToSuperview()
             make.left.right.equalToSuperview().inset(32)
         }
@@ -96,8 +102,14 @@ final class HotWaterMaintenanceCell: UITableViewCell {
             make.left.right.equalToSuperview().inset(32)
         }
         
+        separatingView.snp.makeConstraints { (make) in
+            make.top.equalTo(houseNumberCombinedLabel.snp.bottom).offset(6)
+            make.height.equalTo(2)
+            make.left.right.equalToSuperview()
+        }
+        
         maintenanceDatesLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(houseNumberCombinedLabel.snp.bottom).offset(16)
+            make.top.equalTo(separatingView.snp.bottom).offset(16)
             make.centerX.equalToSuperview()
             make.left.right.equalToSuperview().inset(32)
             make.bottom.equalToSuperview().inset(16)
